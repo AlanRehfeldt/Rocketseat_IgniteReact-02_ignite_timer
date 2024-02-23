@@ -11,7 +11,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { FormProvider, useForm } from 'react-hook-form'
 import * as zod from 'zod'
 import { useContext } from 'react'
-import { CyclesContext } from '../../contexts/CyclesCOntext'
+import { CyclesContext } from '../../contexts/CyclesContext'
 
 const newCicleFormValidationSchema = zod.object({
   task: zod.string().min(1, 'Informe a tarefa'),
